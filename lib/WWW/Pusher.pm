@@ -33,7 +33,7 @@ WWW::Pusher - Interface to the Pusher WebSockets API
 			 channel => 'test_channel' );
 
     my $response  = $pusher->trigger(event => 'my_event', data => 'Hello, World!');
-    my $sock_auth = $pusher->socket_auth('socket_auth_key');
+    my $sock_auth = $pusher->socket_auth(socket_id => 'socket_auth_key');
 
 =head1 METHODS
 
